@@ -9,14 +9,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
     let board = [];
 
-  
     for (let row = 0; row < ROWS; row++) {
         board[row] = [];
         for (let col = 0; col < COLUMNS; col++) {
             board[row][col] = EMPTY;
         }
     }
-
 
     function drawSquare(x, y, color) {
         context.fillStyle = color;
@@ -25,7 +23,6 @@ document.addEventListener('DOMContentLoaded', () => {
         context.strokeRect(x * BLOCK_SIZE, y * BLOCK_SIZE, BLOCK_SIZE, BLOCK_SIZE);
     }
 
-  
     function drawBoard() {
         for (let row = 0; row < ROWS; row++) {
             for (let col = 0; col < COLUMNS; col++) {
@@ -34,5 +31,5 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    drawBoard();
+    drawBoard();  // <-- Aquí está la corrección
 });
