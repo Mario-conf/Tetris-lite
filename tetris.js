@@ -109,7 +109,7 @@ function showGameOver() {
     context.globalAlpha = 0.75;
     context.fillRect(0, canvas.height / 2 - 30, canvas.width, 60);
     setTimeout(() => {
-        alert('¡Game Over! Recarga la página para volver a jugar.');
+        alert(' Recarga la página para volver a jugar.');
         location.reload();
       }, 1000); 
     context.globalAlpha = 1;
@@ -119,7 +119,7 @@ function showGameOver() {
     context.textBaseline = 'middle';
     context.fillText('Game over', canvas.width / 2, canvas.height / 2); 
     setTimeout(() => {
-        alert('¡Game Over! Recarga la página para volver a jugar.');
+        alert('Recarga la página para volver a jugar.');
         location.reload();
       }, 1000); 
   }
