@@ -109,7 +109,7 @@ function showGameOver() {
     context.globalAlpha = 0.75;
     context.fillRect(0, canvas.height / 2 - 30, canvas.width, 60);
     setTimeout(() => {
-        alert(' Recarga la página para volver a jugar.');
+        alert(' Click OK to play again.');
         location.reload();
       }, 1000); 
     context.globalAlpha = 1;
